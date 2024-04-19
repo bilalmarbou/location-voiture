@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class=" aboutPage">
+        <div class="navbars">
+            <a href="#" class="logo"><img src="img/logo.svg"></a>
+            <i class="fa-solid fa-bars-staggered" id="bar"></i>
+            <div class="navbar" id="nv">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="car.html" >Cars</a></li>
+                    <li><a href="contact.html" class="act">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="nav-btn1"><a href="#">Contact US</a></button>
+                <button class="nav-btn2"><a href="car.html">Veiw Car</a></button>
+            </div>
+        </div>
+        
+        <span id="arrow" ><i class="fa-solid fa-arrow-up"></i></span>
+    </header>
+    
+    <div class="topNav">
+        <h1>Contact Us</h1>
+        <span><a href="index.html">Home</a> / <a href="contact.html" class="activ">Contact Us</a></span>
+    </div>
+
+    <div class="contactPage">
+        <div class="contact">
+            <div class="box">
+                <i class="fa-solid fa-phone-volume"></i>
+                <h1>Phone Number</h1>
+                <p>(+212) 626420400</p>
+            </div>
+            <div class="box">
+                <i class="fa-regular fa-envelope"></i>
+                <h1>Email Address</h1>
+                <p>Marbouh@gmail.com</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h1>Location</h1>
+                <p>367 Basatine Lane,Hamwe</p>
+            </div>
+            <div class="box">
+                <i class="fa-regular fa-clock"></i>
+                <h1>Opening Hours</h1>
+                <p>Mon - Sat (10.00AM - 05.30PM)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactWhatsap">
+        <div class="contactImage">
+            <img src="img/contact-info.jpg" alt="">
+        </div>
+
+        <div class="contactWp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h2>Online Support</h2>
+            <p>You still have a question?<br>
+                Send a message</p>
+            <a href="#">WhatsApp Us</a>
+        </div>
+    </div>
+
+<footer>
+        <div class="about-foter">
+           <div class="box">
+            <a href="#"><img src="img/logo.svg" alt=""></a>
+            <p>Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</p>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           </div>
+           <div class="box">
+            <h1 class="link">Quick Links</h1>
+            <a href="index.html" class="links"><i class="fa-solid fa-square"></i> Home</a>
+            <a href="about.html" class="links"><i class="fa-solid fa-square"></i> About</a>
+            <a href="car.html" class="links"><i class="fa-solid fa-square"></i> Cars</a>
+            <a href="contact.html" class="links"><i class="fa-solid fa-square"></i> Contact</a>
+           </div>
+           <div class="box">
+            <h1 class="subs">Subscribe</h1>
+            <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.</p>
+            <span>exemple@gmail.com</span>
+           </div>
+        </div>
+</footer>
+
+    <script>
+        let nav = document.getElementById("nv")
+        let bar = document.getElementById("bar")
+
+        bar.addEventListener("click", function () {
+            nav.classList.toggle("active")
+    })
+        let sec = document.querySelectorAll("section");
+
+        window.onscroll = function () {
+        sec.forEach((e) => {
+        if (window.scrollY >= e.offsetTop - 290) {
+            e.classList.add("show-animate")
+        }
+    })
+}
+
+    </script>
+</body>
+</html>
